@@ -57,7 +57,7 @@
                     <a href="{{ url('#') }}" class="nav-link active">
                         <i class="nav-icon fas fa-weight-hanging"></i>
                         <p>
-                            Produk 
+                            Transaksi 
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
