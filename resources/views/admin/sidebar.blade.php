@@ -61,7 +61,7 @@
 
                 <li class="nav-item menu-open">
                     <a href="{{ url('#') }}" class="nav-link active">
-                        <i class="nav-icon fas fa-weight-hanging"></i>
+                        <i class="nav-icon fas fa-user"></i>
                         <p>
                             Profile
                             <i class="right fas fa-angle-left"></i>
