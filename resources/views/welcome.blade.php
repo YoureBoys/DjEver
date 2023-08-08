@@ -390,6 +390,7 @@
       <div class="swiper-slide"><img src="{{ asset("/holadj/assets/img/clients/client1fix.jpg") }}" class="img-fluid" alt=""></div>
       <div class="swiper-slide"><img src="{{ asset("/holadj/assets/img/clients/client2fix.jpg") }}" class="img-fluid" alt=""></div>
       <div class="swiper-slide"><img src="{{ asset("/holadj/assets/img/clients/client3fix.jpg") }}" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="{{ asset("/holadj/assets/img/clients/client4fix.jpg") }}" class="img-fluid" alt=""></div>
     </div>
   </div>
 </div>
@@ -495,6 +496,7 @@
         <li><a href="https://www.instagram.com/amorakemang/">Amora Kemang</a></li>
         <li><a href="https://www.instagram.com/tebalikopi/">Tebalik Kopi</a></li>
         <li><a href="https://www.instagram.com/odistry.coffee/">Odistry Coffe</a></li>
+        <li><a href="https://www.instagram.com/afterhour_sunter/reels/">Afterhour Sunter</a></li>
       </ul>
     </div>
   </div>
