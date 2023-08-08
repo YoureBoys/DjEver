@@ -45,6 +45,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ url('./user.html') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Dj</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ url('./produk.html') }}" class="nav-link ">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>User</p>
