@@ -57,7 +57,7 @@
                     <a href="{{ url('#') }}" class="nav-link active">
                         <i class="nav-icon fas fa-weight-hanging"></i>
                         <p>
-                            Transaksi 
+                            Profile
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -65,19 +65,13 @@
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Nama Barang</p>
+                                <p>Dj Profiles</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('./produk.html') }}" class="nav-link ">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Harga</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('./stock.html') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Retur</p>
+                                <p>Review</p>
                             </a>
                         </li>
                     </ul>
@@ -87,7 +81,7 @@
                     <a href="{{ url('#') }}" class="nav-link active">
                         <i class="nav-icon fas fa-wallet"></i>
                         <p>
-                            Transaksi
+                            Booking
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -95,19 +89,7 @@
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Nama Barang</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('./produk.html') }}" class="nav-link ">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Harga</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('./stock.html') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Retur</p>
+                                <p>Booking Requests</p>
                             </a>
                         </li>
                     </ul>
