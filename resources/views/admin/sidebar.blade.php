@@ -31,28 +31,28 @@
        with font-awesome or any other icon font library -->
                 <li class="nav-item menu-open">
                     <a href="{{ url('#') }}" class="nav-link active">
-                        <i class="nav-icon fas fa-book"></i>
+                        <i class="nav-icon fas fa-bars"></i>
                         <p>
-                            Menu Master
+                            Menu
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-user-tie nav-icon"></i>
                                 <p>Admin</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-user-lock nav-icon"></i>
                                 <p>Dj</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('./produk.html') }}" class="nav-link ">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-users nav-icon"></i>
                                 <p>User</p>
                             </a>
                         </li>
@@ -70,13 +70,13 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-universal-access nav-icon"></i>
                                 <p>Dj Profiles</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('./produk.html') }}" class="nav-link ">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-star nav-icon"></i>
                                 <p>Review</p>
                             </a>
                         </li>
@@ -94,7 +94,7 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-receipt nav-icon"></i>
                                 <p>Booking Requests</p>
                             </a>
                         </li>
