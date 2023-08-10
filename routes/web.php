@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DbController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/db',[DbController::class, 'index'])->name('db'); 
+
+Route::get('/tambahdata',[DbController::class, 'tambahdata'])->name('tambahdata');
+Route::post('/insertdata',[DbController::class, 'insertdata'])->name('insertdata');
+
+Route::get('/tampilkandata/{id}',[DbController::class, 'tampilkandata'])->name('tampilkandata');
+Route::post('/updatedata/{id}',[DbController::class, 'updatedata'])->name('updatedata');
+
+Route::get('/delete/{id}',[DbController::class, 'delete'])->name('delete');
+
 
 Route::get('/dashboard', function () {
     return view('admin.index');
