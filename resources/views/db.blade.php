@@ -7,21 +7,24 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Dashboard v2</h1>
+                        <h1 class="m-0"></h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{ url('#') }}">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v2</li>
+                            <li class="breadcrumb-item active">
+                                <a href="/dashboard">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">Administator</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
         </div>
+        <h1 class="text-center">Administator DjEver </h1>
         <div class="container">
             <a href="/tambahdata" type="button" class="btn btn-success">Tambah +</a>
-    
-    
+
+
             <div class="row g-3 align-items-center mt-2">
                 <div class="col-auto">
                     <form action="/db" method="GET">
@@ -48,7 +51,7 @@
                         </tr>
                     </thead>
                     <tbody>
-    
+
                         @php
                             $no = 1;
                         @endphp
@@ -60,13 +63,18 @@
                                 <td>{{ $row->role }}</td>
                                 <td>{{ $row->created_at->format('D M Y') }}</td>
                                 <td>
-                                    <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">Edit</a>
+                                    <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">
+                                        <i class="fas fa-edit"></i>
+                                        Edit
+                                    </a>
                                     <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}"
-                                        data-username="{{ $row->username }}">Delete</a>
+                                        data-username="{{ $row->username }}"><i class="fas fa-trash-alt"></i>
+                                    Delete
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach
-    
+
                     </tbody>
                 </table>
                 {{ $data->links() }}
@@ -80,87 +88,33 @@
             integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
         {{-- End JQuery --}}
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    </body>
-    
-    <script>
-        $('.delete').click(function() {
-            var dbid = $(this).attr('data-id');
-            var username = $(this).attr('data-username');
-    
-    
-            swal({
-                    title: "Are you sure?",
-                    text: "Once deleted, you will not be able to recover this db with username " + username +
-                        " ",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                })
-                .then((willDelete) => {
-                    if (willDelete) {
-                        window.location = "/delete/" + dbid + ""
-                        swal("Sorry! your data has been successfully deleted!", {
-                            icon: "success",
-                        });
-                    } else {
-                        swal("data was not deleted!");
-                    }
-                });
-        });
-    </script>
+        </body>
+
+        <script>
+            $('.delete').click(function() {
+                var dbid = $(this).attr('data-id');
+                var username = $(this).attr('data-username');
+
+
+                swal({
+                        title: "Are you sure?",
+                        text: "Once deleted, you will not be able to recover this db with username " + username +
+                            " ",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            window.location = "/delete/" + dbid + ""
+                            swal("Sorry! your data has been successfully deleted!", {
+                                icon: "success",
+                            });
+                        } else {
+                            swal("data was not deleted!");
+                        }
+                    });
+            });
+        </script>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 @endsection

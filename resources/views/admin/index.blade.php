@@ -80,6 +80,7 @@
                     </div>
                     <!-- /.col -->
                 </div>
+            </div>
         </section>
         <!-- /.row -->
 
