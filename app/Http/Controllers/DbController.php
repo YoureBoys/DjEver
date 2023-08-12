@@ -7,8 +7,13 @@ use Illuminate\Http\Request;
 
 class DbController extends Controller
 {
-    public function index () {
-        $data = Db::paginate(3);
+    public function index (Request $request) {
+
+        if($request->has('search')){
+            $data = Db::where('username', 'like', '%' .$request->search. '%')->paginate(3);
+        }else{
+            $data = Db::paginate(3);
+        }
         return view ('db',compact('data')) ;
     }
 

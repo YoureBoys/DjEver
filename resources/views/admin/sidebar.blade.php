@@ -39,7 +39,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('./user.html') }}" class="nav-link">
+                            <a href="/db" class="nav-link active">
                                 <i class="fas fa-user-tie nav-icon"></i>
                                 <p>Admin</p>
                             </a>
@@ -47,12 +47,6 @@
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
                                 <i class="fas fa-user-lock nav-icon"></i>
-                                <p>Dj</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('./produk.html') }}" class="nav-link ">
-                                <i class="fas fa-users nav-icon"></i>
                                 <p>User</p>
                             </a>
                         </li>

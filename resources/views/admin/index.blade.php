@@ -17,7 +17,7 @@
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
-            </div><!-- /.container-fluid -->  
+            </div><!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
 
@@ -72,7 +72,7 @@
 
                             <div class="info-box-content">
                                 <span class="info-box-text">Booking Orders </span>
-                               
+
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -80,8 +80,9 @@
                     </div>
                     <!-- /.col -->
                 </div>
-                <!-- /.row -->
+        </section>
+        <!-- /.row -->
 
-                            <!-- /.card-header -->
-                                <!-- /.content-wrapper -->
-@endsection
+        <!-- /.card-header -->
+        <!-- /.content-wrapper -->
+    @endsection

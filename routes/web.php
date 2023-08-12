@@ -30,6 +30,7 @@ Route::post('/updatedata/{id}',[DbController::class, 'updatedata'])->name('updat
 Route::get('/delete/{id}',[DbController::class, 'delete'])->name('delete');
 
 
+
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
