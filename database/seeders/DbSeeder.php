@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DbSeeder extends Seeder
@@ -15,10 +15,10 @@ class DbSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('dbs')->insert([
-            'username' => 'Muhammad Haeikal Syabani',
+       User::create([
+            'name' => 'Muhammad Haeikal Syabani',
             'email'=> 'tentacel02@gmail.com',
-            'password' => 'admincrud',
+            'password' => bcrypt('admincrud'),
             'role' => 'admin',
         ]);
     }

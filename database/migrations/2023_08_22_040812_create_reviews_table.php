@@ -13,14 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('dbs', function (Blueprint $table) {
+        Schema::create('reviews', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('email');
-            $table->string('password');
-            $table->enum('role', ['admin', 'user']);
+            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('dj_id')->constrained('djprofiles');
+            $table->text('comments')->nullable();
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dbs');
+        Schema::dropIfExists('reviews');
     }
 };

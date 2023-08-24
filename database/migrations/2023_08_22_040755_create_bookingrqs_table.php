@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('bookingrqs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->enum('role', ['admin', 'user'])->default('user');
+            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('dj_id')->constrained('djprofiles');
+            $table->dateTime('jadwal');
+            $table->string('lokasi');
+            $table->string('message');
+            $table->enum('status', ['pending', 'confirmed', 'rejected']);
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('bookingrqs');
     }
 };

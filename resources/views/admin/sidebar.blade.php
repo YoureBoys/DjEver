@@ -70,8 +70,8 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('./produk.html') }}" class="nav-link ">
-                                <i class="fas fa-star nav-icon"></i>
-                                <p>Review</p>
+                                <i class="fas fa-receipt nav-icon"></i>
+                                <p>Booking Requests</p>
                             </a>
                         </li>
                     </ul>
@@ -79,17 +79,17 @@
 
                 <li class="nav-item menu-open">
                     <a href="{{ url('#') }}" class="nav-link active">
-                        <i class="nav-icon fas fa-wallet"></i>
+                        <i class="nav-icon fas fa-poll"></i>
                         <p>
-                            Booking
+                            Survey
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ url('./user.html') }}" class="nav-link">
-                                <i class="fas fa-receipt nav-icon"></i>
-                                <p>Booking Requests</p>
+                                <i class="fas fa-star nav-icon"></i>
+                                <p>Review</p>
                             </a>
                         </li>
                     </ul>

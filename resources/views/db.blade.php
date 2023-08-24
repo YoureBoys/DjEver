@@ -58,7 +58,7 @@
                         @foreach ($data as $index => $row)
                             <tr>
                                 <th scope="row">{{ $index + $data->firstItem() }}</th>
-                                <td>{{ $row->username }}</td>
+                                <td>{{ $row->name }}</td>
                                 <td>{{ $row->email }}</td>
                                 <td>{{ $row->role }}</td>
                                 <td>{{ $row->created_at->format('D M Y') }}</td>
@@ -68,7 +68,7 @@
                                         Edit
                                     </a>
                                     <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}"
-                                        data-username="{{ $row->username }}"><i class="fas fa-trash-alt"></i>
+                                        data-username="{{ $row->name }}"><i class="fas fa-trash-alt"></i>
                                     Delete
                                     </a>
                                 </td>
